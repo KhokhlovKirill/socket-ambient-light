@@ -119,32 +119,6 @@ void lightOff() {
     }
   }
 
-/*void autoMode() {
-  while (true) {
-      if (controlPhotoresist() < lightToLightSwitch) {
-        ledStripe.setBrightness(255);
-        for (int i = 0; i < 255; i++) {
-        ledStripe.setHSV(i, 255, 255);
-        delay(20);
-        if (controlButton.isClick()) {
-          colorWaveMode();
-        }
-      }
-    
-    for (int i = 255; i > 0; i--) {
-        ledStripe.setHSV(i, 255, 255);
-        delay(20);
-        if (controlPhotoresist() >= lightToLightSwitch) ledStripe.setBrightness(0);
-        if (controlButton.isClick()) {
-          colorWaveMode();
-        }
-      }
-      } else {
-        ledStripe.setBrightness(0);
-      }
-    }
-  }*/
-
 void autoMode() {
   while (true) {
    if (controlPhotoresist() < lightToLightSwitch) {
